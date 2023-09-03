@@ -1,51 +1,40 @@
 module.exports = {
-	'env': {
-		'browser': true,
-		'es2021': true
+	env: {
+		browser: true,
+		es2021: true,
 	},
-	'extends': [
+	extends: [
 		'eslint:recommended',
 		'plugin:react/recommended',
-		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-type-checked',
 		'plugin:react-hooks/recommended',
-		'plugin:react/jsx-runtime'
+		'plugin:jsx-a11y/recommended',
+		'plugin:import/recommended',
+		'plugin:promise/recommended',
+		'plugin:react/jsx-runtime',
 	],
-	'overrides': [
-	],
-	'parser': '@typescript-eslint/parser',
-	'parserOptions': {
-		'ecmaVersion': 'latest',
-		'sourceType': 'module'
+	overrides: [],
+	parser: '@typescript-eslint/parser',
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+		project: true,
+		tsconfigRootDir: __dirname,
 	},
-	'plugins': [
-		'react',
-		'@typescript-eslint'
-	],
-	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		]
+	plugins: ['react', '@typescript-eslint', 'prettier'],
+	rules: {
+		indent: ['error', 'tab'],
+		'linebreak-style': ['error', 'unix'],
+		quotes: ['error', 'single'],
+		semi: ['error', 'always'],
+		'prettier/prettier': 'error',
 	},
-	'settings': {
-		'react': {
-			'version': '18.2.0'
-		}
+	settings: {
+		react: {
+			version: '18.2.0',
+		},
 	},
-	'globals': {
-		'module': 'writable',
-
-	}
+	globals: {
+		module: 'writable',
+	},
 };
