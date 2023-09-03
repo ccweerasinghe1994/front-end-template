@@ -42,5 +42,9 @@ module.exports = {
 		'react': {
 			'version': '18.2.0'
 		}
+	},
+	'globals': {
+		'module': 'writable',
+
 	}
 };
