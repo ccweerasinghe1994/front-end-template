@@ -46,3 +46,5 @@ add react hooks to the eslint config file
       'extends': ['plugin:react-hooks/recommended'],
       }
 ```
+
+## step 6
