@@ -37,3 +37,12 @@ add globals to the eslint config file
 	}
 ```
 adding this will remove the error `module is not defined` in the config file
+
+## step 5
+
+add react hooks to the eslint config file
+```js
+   	{
+      'extends': ['plugin:react-hooks/recommended'],
+      }
+```
