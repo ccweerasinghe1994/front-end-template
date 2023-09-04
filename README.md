@@ -151,3 +151,16 @@ module.exports = {
 	},
 };
 ```
+
+## step 7
+adding react-router
+
+## step 8
+
+adding redux
+
+## step 9
+
+adding tailwindcss
+follow this guide
+[guide](https://tailwindcss.com/docs/guides/vite)
