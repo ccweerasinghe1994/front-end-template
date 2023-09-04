@@ -155,6 +155,9 @@ module.exports = {
 ## step 7
 adding react-router
 
+```bash
+npm install react-router-dom
+```
 ## step 8
 
 adding redux
