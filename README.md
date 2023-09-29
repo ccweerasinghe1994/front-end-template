@@ -65,7 +65,7 @@ create a file named `.eslintignore` and add the following
 .eslintrc.cjs
 ```
 
-let's create a prettier config file
+let's create a prettier config file `.prettierrc.json`
 
 ```json
 {
@@ -78,7 +78,7 @@ let's create a prettier config file
     "arrowParens": "always"
 }
 ```
-and a ignore file
+and a ignore file `.prettierignore`
 
 ```json
 # Logs
