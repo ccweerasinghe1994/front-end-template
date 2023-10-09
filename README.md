@@ -162,6 +162,10 @@ npm install react-router-dom
 
 adding redux
 
+- [installation guide](https://redux-toolkit.js.org/introduction/getting-started)
+
+- [typescript guide](https://redux-toolkit.js.org/tutorials/typescript)
+
 ## step 9
 
 adding tailwindcss
