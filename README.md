@@ -79,7 +79,7 @@ let's create a prettier config file `.prettierrc.json`
 }
 ```
 and a ignore file `.prettierignore`
-
+ 
 ```json
 # Logs
 logs
