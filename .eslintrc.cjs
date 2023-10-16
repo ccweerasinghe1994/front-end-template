@@ -28,6 +28,8 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'prettier/prettier': 'error',
+		"@typescript-eslint/no-misused-promises": "warn",
+		"@typescript-eslint/no-unsafe-assignment": "warn",
 	},
 	settings: {
 		react: {
