@@ -18,6 +18,8 @@ export const cityApi = createApi({
 		}),
 		getCities: build.query<TResponse<TCitySchema>, void>({
 			query: () => '/city',
+			transformResponse: (baseQueryReturnValue: { data: TCitySchema[] }) =>
+				baseQueryReturnValue.data,
 		}),
 	}),
 });

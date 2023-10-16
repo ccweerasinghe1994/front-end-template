@@ -3,7 +3,8 @@ import { useGetCitiesQuery } from '../../services/City.service.ts';
 const Table = () => {
 	// get the data from the redux toolkit api hook
 	const { data, isFetching, error, isError, isSuccess } = useGetCitiesQuery();
-
+	console.log(error);
+	console.log(isError);
 	if (isFetching) return <div>loading...</div>;
 	if (isError) return <div>error</div>;
 	return (
@@ -26,8 +27,8 @@ const Table = () => {
 					</tr>
 				</thead>
 				<tbody>
-					{data?.data &&
-						data.data.map((city) => (
+					{data &&
+						data.map((city) => (
 							<tr
 								key={city.id}
 								className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
